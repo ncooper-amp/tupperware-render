@@ -1,0 +1,19 @@
+{
+  "name": "tupperware-render",
+  "version": "1.0.0",
+  "description": "tupperware render",
+  "main": "app.js",
+  "scripts": {
+    "test": "testcommand"
+  },
+  "author": "Neil Cooper",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cms-javascript-sdk": "0.0.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "hbs": "^4.0.1",
+    "npm": "^5.6.0"
+  }
+}
