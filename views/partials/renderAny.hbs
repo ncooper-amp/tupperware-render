@@ -1,0 +1,15 @@
+{{@key}}<br />
+<div class="container">
+{{#each this}}
+  <div class="container">
+  <br />
+  {{#if (isArray this)}}
+    {{> renderAny }}
+  {{else if (isObject this)}}
+    {{> renderAny }}
+  {{else}}
+    <strong>{{@key}}</strong> : {{this}}
+  {{/if}}
+  </div>
+{{/each}}
+</div>

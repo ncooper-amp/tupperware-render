@@ -1,0 +1,39 @@
+
+
+{{> header }}
+<body>
+  <h1>Tupperware Render - debug</h1>
+  <h3>root id: {{ reqParams.id }} store: {{reqParams.store}} </h3>
+  <div id="populateContent">
+
+    {{#each contentGraph }}
+    <div class="container">
+      {{#each this}}
+        <div class="container">
+        <br />
+        {{#if (isArray this)}}
+          {{> renderAny }}
+        {{else if (isObject this)}}
+          {{> renderAny }}
+        {{else}}
+          <strong>{{@key}}</strong> : {{this}}
+        {{/if}}
+      </div>
+      {{/each}}
+    </div>
+    {{/each}}
+
+<pre>
+{{stringContent}} <br />
+</pre>
+
+  </div>
+</body>
+
+
+
+
+{{> footer }}
+
+
+</html>
